@@ -1,0 +1,101 @@
+body {
+  background-color: #272324;
+}
+
+.app-container {
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-title {
+  color: #feba57;
+  font-family: "Nixie One", cursive;
+  font-size: 3em;
+  text-align: center;
+}
+
+i.clipboard-icon.fa-clipboard-list.fas {
+  color: #83b0b5;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-input-box {
+  border: none;
+  border-radius: 12px;
+  border: 2px solid #fff;
+  padding: 20px;
+  width: 315px;
+  height: 10px;
+  color: white;
+  background: none;
+  font-family: "PT Sans", sans-serif;
+  outline: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.form-submit-btn {
+  padding: 20px;
+  background-color: #272324;
+  border: none;
+  font-size: 2.5em;
+  outline: none;
+  color: white;
+  cursor: pointer;
+}
+
+.form-submit-btn:hover {
+  color: #83b0b5;
+}
+
+.todo-items-wrapper {
+  display: grid;
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.25em;
+}
+
+.todo-item__item {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.checkbox__icon {
+  transform: scale(2);
+  margin: 15px 15px;
+}
+
+i.todo-item-delete__icon.far.fa-times-circle::before {
+  color: red;
+  margin: 15px 15px;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media screen and (max-width: 615px) {
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-input-box {
+    width: 100%;
+  }
+}
